@@ -21,22 +21,25 @@
 </head>
 <body>
 
-<h2>Users</h2>
+<h2>Products</h2>
 
 <table>
     <tr>
         <th>Name</th>
-        <th>Mail</th>
-        <th>Password</th>
+        <th>Product</th>
+        <th>Price</th>
     </tr>
-    @foreach($users as $user)
-    <tr>
-        <td>{{$user->name}}</td>
-        <td>{{$user->email}}</td>
-        <td>{{$user->password}}</td>
-    </tr>
+    @foreach($user_products as $user_product)
+        <tr>
+            <td>{{user_products->user->name }}</td>
+            <td>{{user_products->products->name}}</td>
+            <td>{{user_products->products->price}}</td>
+
+        </tr>
     @endforeach
+
 </table>
 
 </body>
 </html>
+$

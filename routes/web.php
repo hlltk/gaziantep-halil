@@ -19,4 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/hakkimda', 'App\Http\Controllers\HomeController@showView');
+Route::get('/urunler', 'App\Http\Controllers\HomeController@showUrunler');
+Route::get('/tablehm', 'App\Http\Controllers\HomeController@showUsers');
 

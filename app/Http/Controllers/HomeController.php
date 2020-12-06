@@ -4,14 +4,24 @@
 namespace App\Http\Controllers;
 
 
+use Illuminate\Support\Facades\DB;
+
 class HomeController extends Controller
 {
      public function showView ()
      {
-         $name = "Ali";
-         $job = "Student";
-         $city= "Gaziantep";
-        return view('hakkimda' , compact('name','job','city'));
+         $users = DB::table('users')->get();
+        return view('hakkimda' ,compact('users'));
     }
-
+    public function showUrunler ()
+    {
+        $products = DB::table('products')->get();
+        return view('urunler' , compact('products'));
+    }
+    public function showUsers ()
+    {
+        $user_products = DB::table('user_products')->get();
+        return view('tablehm' , compact('user_products'));
+    }
 }
+
