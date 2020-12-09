@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfb5f2d-17af-4312-bd4f-09ba333fe7bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_05_235800_products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_06_004810_user_products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/tablehm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/urunler.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_08_195551_add_column_to_products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/products/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/hakkimda.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hakkimda.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_05_235800_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_05_235800_products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tablehm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tablehm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/urunler.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/urunler.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +184,12 @@
       <workItem from="1607125033817" duration="127000" />
       <workItem from="1607125544368" duration="985000" />
       <workItem from="1607126949869" duration="202000" />
-      <workItem from="1607169325779" duration="34615000" />
+      <workItem from="1607169325779" duration="34967000" />
+      <workItem from="1607247522790" duration="1290000" />
+      <workItem from="1607287006228" duration="2371000" />
+      <workItem from="1607452275980" duration="12909000" />
+      <workItem from="1607513742267" duration="6389000" />
+      <workItem from="1607547349136" duration="4302000" />
     </task>
     <servers />
   </component>
@@ -199,6 +206,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

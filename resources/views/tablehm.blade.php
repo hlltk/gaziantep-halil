@@ -34,10 +34,8 @@
             <td>{{user_products->user->name }}</td>
             <td>{{user_products->products->name}}</td>
             <td>{{user_products->products->price}}</td>
-
         </tr>
     @endforeach
-
 </table>
 
 </body>

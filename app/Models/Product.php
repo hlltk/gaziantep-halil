@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use HasFactory;
+    protected $table='products';
+    protected $fillable=['name','price','photo','description','created_by'];
+
+
+    public function user(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany('App\Models\User','id','created_by');
+    }
 }

@@ -27,15 +27,12 @@
     <tr>
         <th>Name</th>
         <th>Price</th>
-        <th>Product</th>
-
-
-    </tr>
+        <th>Added by</th>
     @foreach($products as $product)
         <tr>
             <td>{{$product->name}}</td>
             <td>{{$product->price}}</td>
-
+            <td>{{$product->user[0]->name}}</td>
         </tr>
     @endforeach
 </table>

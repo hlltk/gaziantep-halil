@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Products extends Migration
+class Products extends \Illuminate\Database\Migrations\Migration
 {
     /**
      * Run the migrations.
@@ -18,9 +17,11 @@ class Products extends Migration
                 $table->increments('id');
                 $table->string('name');
                 $table->decimal('price',5,2);
-                $table->string('photo',180)->nullable();
+                $table->string('photo',100)->nullable();
                 $table->text('description')->nullable();
                 $table->timestamps();
+
+
             });
 
     }

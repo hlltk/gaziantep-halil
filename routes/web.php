@@ -21,4 +21,6 @@ Route::get('/', function () {
 Route::get('/hakkimda', 'App\Http\Controllers\HomeController@showView');
 Route::get('/urunler', 'App\Http\Controllers\HomeController@showUrunler');
 Route::get('/tablehm', 'App\Http\Controllers\HomeController@showUsers');
-
+Route::get('/create-product', 'App\Http\Controllers\ProductController@create')->name('product.create'); //Product islemleri
+Route::post('/save-product', 'App\Http\Controllers\ProductController@store')->name('product.save');
+Route::get('/show-product','App\Http\Controllers\ProductController@index');
