@@ -15,12 +15,24 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.index-master');
 });
 
-Route::get('/hakkimda', 'App\Http\Controllers\HomeController@showView');
-Route::get('/urunler', 'App\Http\Controllers\HomeController@showUrunler');
-Route::get('/tablehm', 'App\Http\Controllers\HomeController@showUsers');
-Route::get('/create-product', 'App\Http\Controllers\ProductController@create')->name('product.create'); //Product islemleri
-Route::post('/save-product', 'App\Http\Controllers\ProductController@store')->name('product.save');
-Route::get('/show-product','App\Http\Controllers\ProductController@index');
+
+
+
+Route::get('/hakkimda', 'HomeController@showView');
+Route::get('/urunler', 'HomeController@showUrunler');
+Route::get('/tablehm', 'HomeController@showUsers');
+Route::get('/create-product', 'ProductController@create')->name('product.create'); //Product islemleri
+Route::post('/save-product', 'ProductController@store')->name('product.save');
+Route::get('/show-product','ProductController@index')->name('product.index');
+Route::get('/export-product','ProductController@export')->name('product.export');
+
+
+
+/**
+ * Kategori işlemleri
+ */
+Route::get('/upload-categories','CategoryController@upload')->name('category.upload');
+Route::post('/import-categories', 'CategoryController@import')->name('category.import');
