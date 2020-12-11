@@ -17,10 +17,11 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //$products=Product::all();
-        $products=Product::with(['user'])->get();
+        $products=Product::all();
+        //$products=Product::with(['user'])->get();
         //dd($products);
         return view('products.index',compact('products'));
+
     }
 
     /**

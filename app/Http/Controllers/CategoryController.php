@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Imports\CategoryImport;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -15,7 +16,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
