@@ -30,7 +30,6 @@ Route::get('/show-product','ProductController@index')->name('product.index');
 Route::get('/export-product','ProductController@export')->name('product.export');
 
 
-
 /**
  * Kategori işlemleri
  */
