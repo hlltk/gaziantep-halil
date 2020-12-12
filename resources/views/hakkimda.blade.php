@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Laravel Pagination Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
 
 <h2>Users</h2>
 
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Mail</th>
-        <th>Password</th>
-    </tr>
-    @foreach($users as $user)
-    <tr>
-        <td>{{$user->name}}</td>
-        <td>{{$user->email}}</td>
-        <td>{{$user->password}}</td>
-    </tr>
-    @endforeach
-</table>
+<div class="container nt-4">
+    <table class="table table-bordered" >
+        <tr class="table-info">
+            <th>AD</th>
+            <th>Fiyat</th>
+            <th>Ekleyen</th>
+        </tr>
+        @foreach($products as $product)
+            <tr>
+                <td>{{$product->name}}</td>
+                <td>{{$product->price}}</td>
+                <td>{{$product->user[0]->name}}</td>
+            </tr>
+        @endforeach
+    </table></div>
 
+<div class="d-flex justify-content-center">
+    {{$products->links()}}
+</div>
 </body>
 </html>

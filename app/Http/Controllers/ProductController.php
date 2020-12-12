@@ -18,8 +18,10 @@ class ProductController extends Controller
     public function index()
     {
         $products=Product::all();
-        //$products=Product::with(['user'])->get();
+        //$products = Product::with(['user'])->get();
+        //$products=Product::with(['user'])->latest('id')->take(2   )->get();
         //dd($products);
+       // $products=Product::with(['user'])->paginate(2);
         return view('products.index',compact('products'));
 
     }

@@ -6,8 +6,28 @@
 
 
 @section('featured')
-    @foreach($products as $product)
-    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+
+        <section class="featured spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>Featured Product</h2>
+                        </div>
+                        <div class="featured__controls">
+                            <ul>
+                                <li class="active" data-filter="*">All</li>
+                                @foreach($categories as $category)
+                                <li data-filter=".{{$category->name}}">{{$category->name}}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row featured__filter">
+
+                    @foreach($products as $product)
+    <div class="col-lg-3 col-md-4 col-sm-6 {{$product->CategoryDatabase[0]->name}}">
         <div class="featured__item">
             <div class="featured__item__pic set-bg" data-setbg="../img/featured/feature-1.jpg">
                 <ul class="featured__item__pic__hover">
@@ -37,7 +57,7 @@
 @section('banner')
     <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="banner__pic">
-            <img src="../img/banner/banner-1.jpg" alt="">
+            <img src="../   img/banner/banner-1.jpg" alt="">
         </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6">

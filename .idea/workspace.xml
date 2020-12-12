@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dfb5f2d-17af-4312-bd4f-09ba333fe7bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/UpdateProductStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeworkController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_12_100828_add_status_column_to_products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_12_134717_blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_12_163001_add_cat_column_to_category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hakkimda.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hakkimda.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/homework-master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/homework-master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +38,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="homestead" id="0acc4817-3632-419a-86d5-feb8df56c6c2" name="antep-halil" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/home/vagrant/www/antep-halil" />
+          <mapping local-root="$PROJECT_DIR$/public" remote-root="C:/home/vagrant/www/antep-halil/public" />
+        </path_mappings>
+      </server>
+      <server host="antephalil" id="834ab553-4c9e-4bbf-b8dd-90ffa720008d" name="antephalil" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/public" remote-root="/home/vagrant/www/antep-halil/public" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -164,7 +192,7 @@
       <recent name="C:\Users\computerxx\www\antep-halil\public" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.welcome.blade.php">
+  <component name="RunManager" selected="PHP Web Page.antep-halil">
     <configuration name="welcome.blade.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/antep-halil/resources/views/welcome.blade.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -172,6 +200,14 @@
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="antep-halil" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="antep-halil">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.welcome.blade.php" />
+      <item itemvalue="PHP Web Page.antep-halil" />
+      <item itemvalue="PHPUnit.phpunit.xml" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.welcome.blade.php" />
@@ -198,7 +234,9 @@
       <workItem from="1607547349136" duration="15490000" />
       <workItem from="1607594298217" duration="7921000" />
       <workItem from="1607626376474" duration="13342000" />
-      <workItem from="1607676986282" duration="22284000" />
+      <workItem from="1607676986282" duration="23029000" />
+      <workItem from="1607756227200" duration="13288000" />
+      <workItem from="1607777837591" duration="10723000" />
     </task>
     <servers />
   </component>
