@@ -17,13 +17,14 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products=Product::all();
-        //$products = Product::with(['user'])->get();
-        //$products=Product::with(['user'])->latest('id')->take(2   )->get();
+        //$products=Product::all();
+        //$products = Product::with(['user'])   ->get();
+        return $products=Product::with(['user'])->latest('id')->take(2   )->get();
+        //select('id','name')
         //dd($products);
-       // $products=Product::with(['user'])->paginate(2);
-        return view('products.index',compact('products'));
-
+       //$products=Product::with(['user'])->paginate(2);
+        //return view('hakkimda',compact('products'));
+//products.index
     }
 
     /**
@@ -34,6 +35,7 @@ class ProductController extends Controller
     public function create()
     {
         return view('products.create');
+
     }
 
     /**

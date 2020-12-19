@@ -2,18 +2,31 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Blog;
-use App\Models\Category;
-use App\Models\Product;
+use App\Models\Add;
+use Illuminate\Http\Request;
 
 class HomeworkController extends Controller
 {
-    public function index() {
-        $categories = Category::all();
-        $products = Product::all();
-        $blogs = Blog::all();
-        //dd($banners);
-        return view('products.index', compact('categories', 'products', 'blogs'));
+/**
+* Store a newly created resource in storage.
+*
+* @param \Illuminate\Http\Request $request
+* @return \Illuminate\Http\Response
+*/
+
+
+    public function store(Request $request)
+    {
+        $name = $request->get('name');
+        $phone = $request->get('phone');
+
+        Add::create([
+            'name' => $name,
+            'phone' => $phone,
+
+
+        ]);
+        return back();
     }
 
 }
